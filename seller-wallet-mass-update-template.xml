@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="Sheet1"  >
+		<loop var="massSuspendWallet" items="massSuspendWallets" varType="com.gdn.partners.merchant.suspension.model.wallet.MassSuspendWallet">
+			<section>
+				<mapping row="1" col="0">massSuspendWallet.storeCode</mapping>
+				<mapping row="1" col="1">massSuspendWallet.reasons</mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="1">
+					<cellcheck offset="0"></cellcheck>
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+   </worksheet>
+</workbook>
